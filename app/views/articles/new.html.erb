@@ -1,0 +1,21 @@
+
+<h1>Inscription</h1>
+
+<%= form_for(@article) do |f| %>
+
+<%= f.label :id %>
+<%= f.number_field :id %>
+
+
+<%= f.label :titre %>
+<%= f.text_field :titre %>
+
+
+<%= f.label :description %>
+<%= f.text_field :description %>
+
+
+<%=f.submit "creer", class: "btn btn-primary" %>
+
+<% end %>
+
